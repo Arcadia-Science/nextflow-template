@@ -1,24 +1,13 @@
 #!/usr/bin/env nextflow
 /*
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-    nf-core/nextflowtemplate
+    Arcadia-Science/nextflow-template
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-    Github : https://github.com/nf-core/nextflowtemplate
-
-    Website: https://nf-co.re/nextflowtemplate
-    Slack  : https://nfcore.slack.com/channels/nextflowtemplate
+    Github : https://github.com/Arcadia-Science/nextflow-template
 ----------------------------------------------------------------------------------------
 */
 
 nextflow.enable.dsl = 2
-
-/*
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-    GENOME PARAMETER VALUES
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-*/
-
-params.fasta = WorkflowMain.getGenomeAttribute(params, 'fasta')
 
 /*
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -37,7 +26,7 @@ WorkflowMain.initialise(workflow, params, log)
 include { NEXTFLOWTEMPLATE } from './workflows/nextflowtemplate'
 
 //
-// WORKFLOW: Run main nf-core/nextflowtemplate analysis pipeline
+// WORKFLOW: Run main Arcadia-Science/nextflow-template analysis pipeline
 //
 workflow NFCORE_NEXTFLOWTEMPLATE {
     NEXTFLOWTEMPLATE ()
