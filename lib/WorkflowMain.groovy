@@ -1,5 +1,5 @@
 //
-// This file holds several functions specific to the main.nf workflow in the nf-core/nextflowtemplate pipeline
+// This file holds several functions specific to the main.nf workflow in the Arcadia-Science/nextflow-template pipeline
 //
 
 class WorkflowMain {
