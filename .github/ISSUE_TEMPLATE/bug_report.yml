@@ -5,10 +5,7 @@ body:
   - type: markdown
     attributes:
       value: |
-        Before you post this issue, please check the documentation:
-
-        - [nf-core website: troubleshooting](https://nf-co.re/usage/troubleshooting)
-        - [nf-core/nextflowtemplate pipeline documentation](https://nf-co.re/nextflowtemplate/usage)
+        Before you post this issue, please check the [documentation](https://github.com/Arcadia-Science/nextflow-template).
 
   - type: textarea
     id: description
@@ -45,6 +42,6 @@ body:
         * Nextflow version _(eg. 21.10.3)_
         * Hardware _(eg. HPC, Desktop, Cloud)_
         * Executor _(eg. slurm, local, awsbatch)_
-        * Container engine: _(e.g. Docker, Singularity, Conda, Podman, Shifter or Charliecloud)_
+        * Container engine: _(e.g. Docker, Singularity, Conda)_
         * OS _(eg. CentOS Linux, macOS, Linux Mint)_
-        * Version of nf-core/nextflowtemplate _(eg. 1.1, 1.5, 1.8.2)_
+        * Version of Arcadia-Science/nextflow-template _(eg. 1.1, 1.5, 1.8.2)_
