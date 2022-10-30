@@ -1,23 +1,10 @@
 {
-    "name": "nf-core/nextflowtemplate",
-    "homePage": "https://github.com/nf-core/nextflowtemplate",
+    "name": "Arcadia-Science/nextflow-template",
+    "homePage": "https://github.com/Arcadia-Science/nextflow-template",
     "repos": {
         "https://github.com/nf-core/modules.git": {
             "modules": {
-                "nf-core": {
-                    "custom/dumpsoftwareversions": {
-                        "branch": "master",
-                        "git_sha": "5e34754d42cd2d5d248ca8673c0a53cdf5624905"
-                    },
-                    "fastqc": {
-                        "branch": "master",
-                        "git_sha": "5e34754d42cd2d5d248ca8673c0a53cdf5624905"
-                    },
-                    "multiqc": {
-                        "branch": "master",
-                        "git_sha": "5e34754d42cd2d5d248ca8673c0a53cdf5624905"
-                    }
-                }
+                "nf-core": {}
             }
         }
     }

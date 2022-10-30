@@ -4,15 +4,15 @@
   |\\ | |__  __ /  ` /  \\ |__) |__         }  {
   | \\| |       \\__, \\__/ |  \\ |___     \\`-._,-`-,
                                         `._,._,'
-  nf-core/nextflowtemplate v${version}
+  Arcadia-Science/nextflow-template v${version}
 ----------------------------------------------------
 Run Name: $runName
 
 <% if (success){
-    out << "## nf-core/nextflowtemplate execution completed successfully! ##"
+    out << "## Arcadia-Science/nextflow-template execution completed successfully! ##"
 } else {
     out << """####################################################
-## nf-core/nextflowtemplate execution completed unsuccessfully! ##
+## Arcadia-Science/nextflow-template execution completed unsuccessfully! ##
 ####################################################
 The exit status of the task that caused the workflow execution to fail was: $exitStatus.
 The full error message was:
@@ -35,5 +35,5 @@ Pipeline Configuration:
 <% out << summary.collect{ k,v -> " - $k: $v" }.join("\n") %>
 
 --
-nf-core/nextflowtemplate
-https://github.com/nf-core/nextflowtemplate
+Arcadia-Science/nextflow-template
+https://github.com/Arcadia-Science/nextflow-template
