@@ -1,6 +1,6 @@
 {
     "$schema": "http://json-schema.org/draft-07/schema",
-    "$id": "https://raw.githubusercontent.com/Arcadia-Science/nextflow-template/master/nextflow_schema.json",
+    "$id": "https://raw.githubusercontent.com/Arcadia-Science/nextflow-template/main/nextflow_schema.json",
     "title": "Arcadia-Science/nextflow-template pipeline parameters",
     "description": "This is a template repository that includes the bare minimum from nf-core tools",
     "type": "object",
@@ -96,13 +96,6 @@
                     "type": "boolean",
                     "description": "Do not use coloured log outputs.",
                     "fa_icon": "fas fa-palette",
-                    "hidden": true
-                },
-                "hook_url": {
-                    "type": "string",
-                    "description": "Incoming hook URL for messaging service",
-                    "fa_icon": "fas fa-people-group",
-                    "help_text": "Incoming hook URL for messaging service. Currently, only MS Teams is supported.",
                     "hidden": true
                 },
                 "tracedir": {
