@@ -23,13 +23,13 @@ WorkflowMain.initialize(workflow, params, log)
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 */
 
-include { NEXTFLOWTEMPLATE } from './workflows/nextflowtemplate'
+include { {{cookiecutter.uppercased}} } from './workflows/{{cookiecutter.underscored}}'
 
 //
 // WORKFLOW: Run main {{cookiecutter.github_username}}/{{cookiecutter.hyphenated}} analysis pipeline
 //
-workflow NFCORE_NEXTFLOWTEMPLATE {
-    NEXTFLOWTEMPLATE ()
+workflow NFCORE_{{cookiecutter.uppercased}} {
+    {{cookiecutter.uppercased}} ()
 }
 
 /*
@@ -43,7 +43,7 @@ workflow NFCORE_NEXTFLOWTEMPLATE {
 // See: https://github.com/nf-core/rnaseq/issues/619
 //
 workflow {
-    NFCORE_NEXTFLOWTEMPLATE ()
+    NFCORE_{{cookiecutter.uppercased}} ()
 }
 
 /*
