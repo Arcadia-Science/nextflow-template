@@ -1,9 +1,9 @@
 #!/usr/bin/env nextflow
 /*
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-    Arcadia-Science/nextflow-template
+    {{cookiecutter.github_username}}/{{cookiecutter.hyphenated}}
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-    Github : https://github.com/Arcadia-Science/nextflow-template
+    Github : https://github.com/{{cookiecutter.github_username}}/{{cookiecutter.hyphenated}}
 ----------------------------------------------------------------------------------------
 */
 
@@ -26,7 +26,7 @@ WorkflowMain.initialize(workflow, params, log)
 include { NEXTFLOWTEMPLATE } from './workflows/nextflowtemplate'
 
 //
-// WORKFLOW: Run main Arcadia-Science/nextflow-template analysis pipeline
+// WORKFLOW: Run main {{cookiecutter.github_username}}/{{cookiecutter.hyphenated}} analysis pipeline
 //
 workflow NFCORE_NEXTFLOWTEMPLATE {
     NEXTFLOWTEMPLATE ()

@@ -7,7 +7,7 @@ on:
 jobs:
   run-tower:
     name: Run AWS tests
-    if: github.repository == 'Arcadia-Science/nextflow-template'
+    if: github.repository == '{{cookiecutter.github_username}}/{{cookiecutter.hyphenated}}'
     runs-on: ubuntu-latest
     steps:
       # Launch workflow using Tower CLI tool action
