@@ -1,4 +1,4 @@
-name: AWS test
+name: nf-core AWS test
 # This workflow can be triggered manually with the GitHub actions workflow dispatch button.
 # It runs the -profile 'test' on AWS batch
 
