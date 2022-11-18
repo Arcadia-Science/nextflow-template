@@ -5,8 +5,6 @@ Many thanks for contributing to Arcadia-Science/nextflow-template!
 
 Please fill in the appropriate checklist below (delete whatever is not relevant).
 These are the most common things requested on pull requests (PRs).
-
-Learn more about contributing: [CONTRIBUTING.md](https://github.com/Arcadia-Science/nextflow-template/tree/main/.github/CONTRIBUTING.md)
 -->
 
 ## PR checklist
@@ -15,5 +13,5 @@ Learn more about contributing: [CONTRIBUTING.md](https://github.com/Arcadia-Scie
 - [ ] If you've fixed a bug or added code that should be tested, add tests!
 - [ ] If you've added a new tool - have you followed the pipeline conventions?
 - [ ] Make sure your code lints (`nf-core lint`).
-- [ ] Ensure the test suite passes (`nextflow run . -profile test,docker --outdir <OUTDIR>`).
+- [ ] Ensure the test suite passes (`nextflow run . -profile test,docker --out_dir <OUT_DIR>`).
 - [ ] `README.md` is updated (including new tool citations and authors/contributors).

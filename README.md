@@ -32,8 +32,6 @@ The pipeline is built using [Nextflow](https://www.nextflow.io), a workflow tool
 
 <!-- TODO: Add CONTRIBUTING.MD that is specific to Arcadia Science -->
 
-If you would like to contribute to this pipeline, please see the [contributing guidelines](.github/CONTRIBUTING.md).
-
 ## Citations
 
 <!-- TODO: Add bibliography of tools and data used in your pipeline -->
