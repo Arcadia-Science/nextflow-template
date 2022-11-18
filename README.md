@@ -6,7 +6,11 @@ Use this template on your own machine with cookiecutter, or create a brand new r
 
 This is fully inspired by the following blog post: https://simonwillison.net/2021/Aug/28/dynamic-github-repository-templates/. The README instructions here are modified from [this GitHub repository](https://github.com/simonw/click-app).
 
-## Installation
+## Installation via GitHub templates
+
+You can start [here](https://github.com/Arcadia-Science/nextflow-template-repository/generate) and follow the prompts.
+
+## Installation locally
 
 You'll need to have [cookiecutter](https://cookiecutter.readthedocs.io/) installed.
 
