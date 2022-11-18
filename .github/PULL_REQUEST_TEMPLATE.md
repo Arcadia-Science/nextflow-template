@@ -13,5 +13,5 @@ These are the most common things requested on pull requests (PRs).
 - [ ] If you've fixed a bug or added code that should be tested, add tests!
 - [ ] If you've added a new tool - have you followed the pipeline conventions?
 - [ ] Make sure your code lints (`nf-core lint`).
-- [ ] Ensure the test suite passes (`nextflow run . -profile test,docker --out_dir <OUT_DIR>`).
+- [ ] Ensure the test suite passes (`nextflow run . -profile test,docker --outdir <OUTDIR>`).
 - [ ] `README.md` is updated (including new tool citations and authors/contributors).
