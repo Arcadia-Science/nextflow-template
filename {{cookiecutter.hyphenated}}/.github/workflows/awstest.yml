@@ -14,13 +14,13 @@ jobs:
       - name: Launch workflow via tower
         uses: nf-core/tower-action@v3
         with:
-          workspace_id: ${{ secrets.TOWER_WORKSPACE_ID }}
-          access_token: ${{ secrets.TOWER_ACCESS_TOKEN }}
-          compute_env: ${{ secrets.TOWER_COMPUTE_ENV }}
-          workdir: s3://${{ secrets.AWS_S3_BUCKET }}/work/{{cookiecutter.underscored}}/work-${{ github.sha }}
+          workspace_id: {{ ${{ secrets.TOWER_WORKSPACE_ID }} }}
+          access_token: {{ ${{ secrets.TOWER_ACCESS_TOKEN }} }}
+          compute_env: {{ ${{ secrets.TOWER_COMPUTE_ENV }} }}
+          workdir: {{ s3://${{ secrets.AWS_S3_BUCKET }}/work/{{cookiecutter.underscored}}/work-${{ github.sha }} }}
           parameters: |
             {
-              "outdir": "s3://${{ secrets.AWS_S3_BUCKET }}/{{cookiecutter.underscored}}/results-test-${{ github.sha }}"
+              {{ "outdir": "s3://${{ secrets.AWS_S3_BUCKET }}/{{cookiecutter.underscored}}/results-${{ github.sha }}" }}
             }
           profiles: test,aws_tower
       - uses: actions/upload-artifact@v3
