@@ -1,5 +1,5 @@
 name: Feature request
-description: Suggest an idea for the Arcadia-Science/nextflow-template pipeline
+description: Suggest an idea for the {{cookiecutter.github_username}}/{{cookiecutter.hyphenated}} pipeline
 labels: enhancement
 body:
   - type: textarea

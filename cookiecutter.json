@@ -1,0 +1,9 @@
+{
+  "app_name": "",
+  "description": "",
+  "hyphenated": "{{ '-'.join(cookiecutter['app_name'].lower().split()).replace('_', '-') }}",
+  "underscored": "{{ cookiecutter.hyphenated.replace('-', '_') }}",
+  "uppercased": "{{ cookiecutter.underscored.upper() }}",
+  "github_username": "",
+  "author_name": ""
+}

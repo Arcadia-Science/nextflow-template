@@ -45,7 +45,7 @@ for (param in checkPathParamList) { if (param) { file(param, checkIfExists: true
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 */
 
-workflow NEXTFLOWTEMPLATE {
+workflow {{cookiecutter.uppercased}} {
 
 }
 

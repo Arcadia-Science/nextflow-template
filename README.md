@@ -1,41 +1,53 @@
-# Arcadia-Science/nextflow-template
+# Nextflow cookiecutter template
 
-<!-- TODO: Update these based on your pipeline's supported platforms -->
+Cookiecutter template for creating new [Nextflow](https://www.nextflow.io/) pipelines.
 
-[![Nextflow](https://img.shields.io/badge/nextflow%20DSL2-%E2%89%A521.10.3-23aa62.svg)](https://www.nextflow.io/)
-[![run with conda](http://img.shields.io/badge/run%20with-conda-3EB049?labelColor=000000&logo=anaconda)](https://docs.conda.io/en/latest/)
-[![run with docker](https://img.shields.io/badge/run%20with-docker-0db7ed?labelColor=000000&logo=docker)](https://www.docker.com/)
-[![run with singularity](https://img.shields.io/badge/run%20with-singularity-1d355c.svg?labelColor=000000)](https://sylabs.io/docs/)
-[![Launch on Nextflow Tower](https://img.shields.io/badge/Launch%20%F0%9F%9A%80-Nextflow%20Tower-%234256e7)](https://tower.nf/launch?pipeline=https://github.com/Arcadia-Science/nextflow-template)
+Use this template on your own machine with cookiecutter, or create a brand new repository based on this template entirely through the GitHub web interface using [nextflow-template-repository](https://github.com/Arcadia-Science/nextflow-template-repository).
 
-## Introduction
+This is fully inspired by the following blog post: https://simonwillison.net/2021/Aug/28/dynamic-github-repository-templates/. The README instructions here are modified from [this GitHub repository](https://github.com/simonw/click-app).
 
-<!-- TODO: Write a 1-2 sentence summary of what data the pipeline is for and what it does -->
+## Installation via GitHub templates
 
-**Arcadia-Science/nextflow-template** is a template repository that includes the bare minimum from nf-core tools.
+You can start [here](https://github.com/Arcadia-Science/nextflow-template-repository/generate) and follow the prompts.
 
-The pipeline is built using [Nextflow](https://www.nextflow.io), a workflow tool to run tasks across multiple compute infrastructures in a very portable manner. It uses Docker/Singularity containers making installation trivial and results highly reproducible. The [Nextflow DSL2](https://www.nextflow.io/docs/latest/dsl2.html) implementation of this pipeline uses one container per process which makes it much easier to maintain and update software dependencies. Where possible, these processes have been submitted to and installed from [nf-core/modules](https://github.com/nf-core/modules) in order to make them available to all nf-core pipelines, and to everyone within the Nextflow community!
+## Installation locally
 
-<!-- TODO: Add full-sized test dataset and amend the paragraph below if applicable -->
+You'll need to have [cookiecutter](https://cookiecutter.readthedocs.io/) installed.
 
-## Pipeline summary
+```{bash}
+pip install cookiecutter
+```
 
-<!-- TODO: Fill in short bullet-pointed list of the default steps in the pipeline -->
+## Usage
 
-## Quick start
+Run `cookiecutter gh:Arcadia-Science/nextflow-template` in your terminal and then answer the prompts. Here's an example run:
 
-<!-- TODO: Fill in short bullet-pointed list of the default steps to get the pipeline up and running -->
+```{bash}
+cookiecutter gh:Arcadia-Science/nextflow-template
+```
 
-## Full documentation
+It is strongly recommended to accept the suggested value for "hyphenated" and "underscored" by hitting enter on those prompts.
 
-<!-- TODO: Fill in this section with how to fully use the pipeline, what the inputs are and what the outputs look like. If this section ends up being super long, feel free to create a new docs/ directory and add details there. -->
+## Creating a Git repository for your tool
 
-## Contributions and support
+You can initialize a Git repository for your tool like this:
 
-<!-- TODO: Add CONTRIBUTING.MD that is specific to Arcadia Science -->
+```{bash}
+cd my-new-tool
+git init
+git add .
+git commit -m "Initial structure from template"
+# Rename the 'master' branch to 'main':
+git branch -m master main
+```
 
-## Citations
+## Publishing your tool to GitHub
 
-<!-- TODO: Add bibliography of tools and data used in your pipeline -->
+Use https://github.com/new to create a new GitHub repository sharing the same name as your tool, which should be something like `my-new-tool`.
 
-An extensive list of references for the tools used by the pipeline can be found in the [`CITATIONS.md`](CITATIONS.md) file.
+Push your `main` branch to GitHub like this:
+
+```{bash}
+git remote add origin git@github.com:YOURNAME/my-new-tool.git
+git push -u origin main
+```

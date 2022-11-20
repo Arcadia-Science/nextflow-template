@@ -1,0 +1,11 @@
+{
+    "name": "{{cookiecutter.github_username}}/{{cookiecutter.hyphenated}}",
+    "homePage": "https://github.com/{{cookiecutter.github_username}}/{{cookiecutter.hyphenated}}",
+    "repos": {
+        "https://github.com/nf-core/modules.git": {
+            "modules": {
+                "nf-core": {}
+            }
+        }
+    }
+}

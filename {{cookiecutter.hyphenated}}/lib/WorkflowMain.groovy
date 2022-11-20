@@ -1,5 +1,5 @@
 //
-// This file holds several functions specific to the main.nf workflow in the Arcadia-Science/nextflow-template pipeline
+// This file holds several functions specific to the main.nf workflow in the {{cookiecutter.github_username}}/{{cookiecutter.hyphenated}} pipeline
 //
 
 class WorkflowMain {
@@ -22,7 +22,8 @@ class WorkflowMain {
     // Print help to screen if required
     //
     public static String help(workflow, params, log) {
-        def command = "nextflow run ${workflow.manifest.name} --input samplesheet.csv --genome GRCh37 -profile docker"
+        // TODO: Update the help string
+        def command = "nextflow run ${workflow.manifest.name} -profile docker"
         def help_string = ''
         help_string += NfcoreTemplate.logo(workflow, params.monochrome_logs)
         help_string += NfcoreSchema.paramsHelp(workflow, params, command)

@@ -1,4 +1,4 @@
-# Arcadia-Science/nextflow-template: Citations
+# {{cookiecutter.github_username}}/{{cookiecutter.hyphenated}}: Citations
 
 ## [nf-core](https://pubmed.ncbi.nlm.nih.gov/32055031/)
 

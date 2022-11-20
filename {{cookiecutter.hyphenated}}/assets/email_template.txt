@@ -4,15 +4,15 @@
   |\\ | |__  __ /  ` /  \\ |__) |__         }  {
   | \\| |       \\__, \\__/ |  \\ |___     \\`-._,-`-,
                                         `._,._,'
-  Arcadia-Science/nextflow-template v${version}
+  {{cookiecutter.github_username}}/{{cookiecutter.hyphenated}} v${version}
 ----------------------------------------------------
 Run Name: $runName
 
 <% if (success){
-    out << "## Arcadia-Science/nextflow-template execution completed successfully! ##"
+    out << "## {{cookiecutter.github_username}}/{{cookiecutter.hyphenated}} execution completed successfully! ##"
 } else {
     out << """####################################################
-## Arcadia-Science/nextflow-template execution completed unsuccessfully! ##
+## {{cookiecutter.github_username}}/{{cookiecutter.hyphenated}} execution completed unsuccessfully! ##
 ####################################################
 The exit status of the task that caused the workflow execution to fail was: $exitStatus.
 The full error message was:
@@ -35,5 +35,5 @@ Pipeline Configuration:
 <% out << summary.collect{ k,v -> " - $k: $v" }.join("\n") %>
 
 --
-Arcadia-Science/nextflow-template
-https://github.com/Arcadia-Science/nextflow-template
+{{cookiecutter.github_username}}/{{cookiecutter.hyphenated}}
+https://github.com/{{cookiecutter.github_username}}/{{cookiecutter.hyphenated}}
