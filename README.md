@@ -20,40 +20,13 @@ pip install cookiecutter
 
 ## Usage
 
-Run `cookiecutter gh:Arcadia-Science/nextflow-template` and then answer the prompts. Here's an example run:
+Run `cookiecutter gh:Arcadia-Science/nextflow-template` in your terminal and then answer the prompts. Here's an example run:
 
 ```{bash}
-$ cookiecutter gh:simonw/click-app
+cookiecutter gh:Arcadia-Science/nextflow-template
 ```
 
 It is strongly recommended to accept the suggested value for "hyphenated" and "underscored" by hitting enter on those prompts.
-
-Having created the new structure from the template, here's how to start working on the tool.
-
-If your tool is called `my-new-tool`, you can start working on it like so:
-
-    cd my-new-tool
-    # Create and activate a virtual environment:
-    python3 -m venv venv
-    source venv/bin/activate
-    # Install dependencies so you can edit the project:
-    pip install -e '.[test]'
-    # With zsh you have to run this again for some reason:
-    source venv/bin/activate
-    # Confirm your tool can be run from the command-line
-    my-new-tool --version
-
-You should see the following:
-
-    my-new-tool, version 0.1
-
-You can run the default test for your tool like so:
-
-    pytest
-
-This will execute the test in `tests/test_my_new_tool.py`.
-
-Now you can open the `my_new_tool/cli.py` file and start adding Click [commands and groups](https://click.palletsprojects.com/en/7.x/commands/).
 
 ## Creating a Git repository for your tool
 
