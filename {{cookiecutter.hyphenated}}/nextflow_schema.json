@@ -1,8 +1,9 @@
+// TODO: Update the description
 {
     "$schema": "http://json-schema.org/draft-07/schema",
     "$id": "https://raw.githubusercontent.com/{{cookiecutter.github_username}}/{{cookiecutter.hyphenated}}/main/nextflow_schema.json",
     "title": "{{cookiecutter.github_username}}/{{cookiecutter.hyphenated}} pipeline parameters",
-    "description": "This is a template repository that includes the bare minimum from nf-core tools",
+    "description": "{{cookiecutter.description}}",
     "type": "object",
     "definitions": {
         "email_options": {
