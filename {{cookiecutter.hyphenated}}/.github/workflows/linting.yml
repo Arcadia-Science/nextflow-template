@@ -62,7 +62,7 @@ jobs:
             We highly recommend setting up Black in your code editor so that this formatting is done automatically on save. Ask about it on Slack for help!
 
             Thanks again for your contribution!
-          repo-token: ${{ secrets.GITHUB_TOKEN }}
+          repo-token: {{ ${{ secrets.GITHUB_TOKEN }} }}
           allow-repeats: false
 
   # TODO: Uncomment the following section to make the nf-core lint run periodically.
@@ -88,17 +88,17 @@ jobs:
 
   #     - name: Run nf-core lint
   #       env:
-  #         GITHUB_COMMENTS_URL: ${{ github.event.pull_request.comments_url }}
-  #         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-  #         GITHUB_PR_COMMIT: ${{ github.event.pull_request.head.sha }}
-  #       run: nf-core -l lint_log.txt lint --dir ${GITHUB_WORKSPACE} --markdown lint_results.md
+  #         GITHUB_COMMENTS_URL: {{ ${{ github.event.pull_request.comments_url }} }}
+  #         GITHUB_TOKEN: {{ ${{ secrets.GITHUB_TOKEN }} }}
+  #         GITHUB_PR_COMMIT: {{ ${{ github.event.pull_request.head.sha }} }}
+  #       run: nf-core -l lint_log.txt lint --dir {{ ${GITHUB_WORKSPACE} }} --markdown lint_results.md
 
   #     - name: Save PR number
-  #       if: ${{ always() }}
-  #       run: echo ${{ github.event.pull_request.number }} > PR_number.txt
+  #       if: {{ ${{ always() }} }}
+  #       run: echo {{ ${{ github.event.pull_request.number }} }} > PR_number.txt
 
   #     - name: Upload linting log file artifact
-  #       if: ${{ always() }}
+  #       if: {{ ${{ always() }} }}
   #       uses: actions/upload-artifact@v2
   #       with:
   #         name: linting-logs
