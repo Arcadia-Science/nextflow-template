@@ -53,7 +53,9 @@ git push -u origin main
 ```
 
 ## Citations
+
 This cookiecutter template is based off of the `nf-core` template. You can cite the `nf-core` publication as follows:
+
 > **The nf-core framework for community-curated bioinformatics pipelines.**
 >
 > Philip Ewels, Alexander Peltzer, Sven Fillinger, Harshil Patel, Johannes Alneberg, Andreas Wilm, Maxime Ulysse Garcia, Paolo Di Tommaso & Sven Nahnsen.
